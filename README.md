@@ -49,6 +49,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     To allow the application to send messages, you must invite the bot to the desired channels within your Slack workspace. Invite the Bot to Channels->
 ```bash
 /invite @Slack Connect Bot
+```
 
 2.  **Clone the repository:**
     ```bash
