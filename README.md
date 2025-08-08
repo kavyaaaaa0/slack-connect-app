@@ -1,3 +1,7 @@
+## DEPLOYED ON VERCEL-
+`slack-connect-app.vercel.app`
+
+
 # Slack Connect
 
 Slack Connect is a full-stack application built with [Next.js](https://nextjs.org) that enables users to connect their Slack workspaces, send messages instantly, and schedule them for future delivery. It utilizes the Slack API with OAuth 2.0 for secure authentication and robust token management.
@@ -61,7 +65,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```env
     SLACK_CLIENT_ID=your_slack_client_id
     SLACK_CLIENT_SECRET=your_slack_client_secret
-    NEXT_PUBLIC_URL=http://localhost:3000
+    NEXT_PUBLIC_URL= ADD YOUR REDIRECTED URI FROM SLACK
     MONGODB_URI=your_mongodb_connection_string
     ```
     Replace the placeholder values with your actual Slack app credentials and MongoDB connection string.
@@ -94,10 +98,3 @@ A primary challenge was implementing the OAuth 2.0 flow securely, including hand
 
 Using a tunneling service like `ngrok` is necessary for Slack's webhooks to reach a local server. However, the free version of `ngrok` generates a new public URL on each restart, requiring frequent updates to the redirect URI in the Slack App configuration. While manageable for development, the permanent solution is to deploy the application to a hosting service that provides a stable public URL.
 
-## Deploy on Vercel
-
-The easiest way to deploy this Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
-
-When deploying, ensure you set the environment variables in the Vercel project settings. You will also need to update the redirect URI in your Slack App configuration to use your new Vercel deployment URL.
-
-For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
