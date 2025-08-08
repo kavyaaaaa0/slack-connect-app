@@ -1,5 +1,6 @@
 ## DEPLOYED ON VERCEL-
-`slack-connect-app.vercel.app`
+🔗 **Live App**: [https://slack-connect-app.vercel.app](https://slack-connect-app.vercel.app)
+
 
 
 # Slack Connect
@@ -37,7 +38,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Prerequisites
 
 * [Node.js](https://nodejs.org/) (v18 or later)
-* [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+* [npm](https://www.npmjs.com/) 
 * [MongoDB](https://www.mongodb.com/try/download/community) (a local instance or a MongoDB Atlas account)
 * A [Slack App](https://api.slack.com/apps) with the necessary permissions.
 
@@ -45,7 +46,9 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 
 1.  **IMPORTANT** **Add Bot to Channels:**
-    To allow the application to send messages, you must invite the bot to the desired channels within your Slack workspace. Use the command `/invite @Slack Connect Bot` in each channel.
+    To allow the application to send messages, you must invite the bot to the desired channels within your Slack workspace. Invite the Bot to Channels->
+```bash
+/invite @Slack Connect Bot
 
 2.  **Clone the repository:**
     ```bash
@@ -56,8 +59,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 3.  **Install dependencies:**
     ```bash
     npm install
-    # or
-    yarn install
+    
     ```
 
 4.  **Set up environment variables:**
@@ -81,8 +83,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 1.  **Start the development server:**
     ```bash
     npm run dev
-    # or
-    yarn dev
+
     ```
 
 2.  **Open the application:**
